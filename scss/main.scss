@@ -1,38 +1,5 @@
-/*
-// Palette 2: Orange, white, black
-
-$header:#EB5E28;
-$text:#252422;
-$background:#FFFCF2;
-$accent1:#CCC5B9;
-$accent2:#FF9368;
-*/
-/*
-// Palette 3: Greens
-$header:#347000;
-$text:#11270B;
-$background:#DDE3D8;
-$accent1:#9FE04A;
-$accent2:#6D8C52;
-*/
-/*
-// Palette 1: Air Force Blue
-$header:#19368E;
-$text:#232528;
-$background:#F3F7F0;
-$accent1:#2B3154;
-$accent2:#424B54;
-*/
-/*
-// Modern
-$header:#1E152A;
-$text:#4E6766;
-$bg1:#5AB1BB;
-$bg2:#A5C882;
-$bg3:#F7DD72;
-*/
 $dark: #050505;
-$accent: #1B9AAA;
+$accent: #2F6BBF;
 $bg: #FFFFFF;
 $light: #DDDBCB;
 
@@ -42,6 +9,24 @@ html, body {
     margin: 0;
     height: 100%;
     width: 100%;
+}
+
+.bigbuttons {
+	color: $accent;
+	background-color: $bg;
+	text-shadow: 1px 1px black;
+    text-align: center;
+    height: 20vh;
+    padding-top: 2vh;
+    a {
+		padding: 0 0.5em;
+        color: inherit;
+        font-size: 3.5em;
+		text-decoration: underline;
+		&:hover {
+			color: $light;
+		}
+    }
 }
 
 .links {
@@ -90,24 +75,6 @@ section {
     overflow: hidden;
 }
 
-.bigbuttons {
-	color: $accent;
-	background-color: $bg;
-	text-shadow: 1px 1px black;
-    float: left;
-    width: 50%;
-    text-align: center;
-    height: 20vh;
-    padding-top: 2vh;
-    a {
-        color: inherit;
-        font-size: 3.5em;
-		text-decoration: underline;
-		&:hover {
-			color: $light;
-		}
-    }
-}
 #top {
  	background-color: $bg;
 	padding: inherit;
