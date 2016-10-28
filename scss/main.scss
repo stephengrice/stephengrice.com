@@ -12,12 +12,14 @@ html, body {
 }
 
 .links {
+    height: 5vh;
     text-align: center;
     background-color: black;
     padding: 0.2em 0;
     
     a {
-        padding: 0 20%;
+        font-size: 1.4em;
+        padding: 0 10%;
         color: $white;
         text-decoration: none;
         &:hover {
@@ -26,10 +28,20 @@ html, body {
     }
 }
 
+.links-state2 {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
 h1 {
     font-weight: normal;
     font-size: 6em;
     line-height: 0.75em;
+    text-align: center;
+}
+h2 {
+    padding: 1em;
     text-align: center;
 }
 section {
@@ -42,22 +54,24 @@ section {
     float: left;
     width: 50%;
     text-align: center;
-    height: 50vh;
-    padding-top: 20%;
+    height: 20vh;
+    padding-top: 2vh;
     
     a {
-        background-color: $black;
-        color: $white;
-        padding: 10%;
-        text-decoration: none;
+        color: $black;
         font-size: 3.5em;
     }
 }
 #top {
     background-color: $yellow;
+    min-height: 95vh;
+    height: 95vh;
 }
 #portfolio {
     background-color: $olive;
+}
+.portfolio-state2 {
+    padding-top: 7vh;
 }
 #resume {
     background-color: $white;
