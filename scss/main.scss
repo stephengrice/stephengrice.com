@@ -1,11 +1,43 @@
+/*
+// Palette 2: Orange, white, black
+
 $header:#EB5E28;
 $text:#252422;
 $background:#FFFCF2;
 $accent1:#CCC5B9;
 $accent2:#FF9368;
+*/
+/*
+// Palette 3: Greens
+$header:#347000;
+$text:#11270B;
+$background:#DDE3D8;
+$accent1:#9FE04A;
+$accent2:#6D8C52;
+*/
+/*
+// Palette 1: Air Force Blue
+$header:#19368E;
+$text:#232528;
+$background:#F3F7F0;
+$accent1:#2B3154;
+$accent2:#424B54;
+*/
+/*
+// Modern
+$header:#1E152A;
+$text:#4E6766;
+$bg1:#5AB1BB;
+$bg2:#A5C882;
+$bg3:#F7DD72;
+*/
+$dark: #050505;
+$accent: #1B9AAA;
+$bg: #FFFFFF;
+$light: #DDDBCB;
 
 html, body {
-	color: $text;
+	color: $dark;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     height: 100%;
@@ -13,18 +45,18 @@ html, body {
 }
 
 .links {
+    background-color: $dark;
+	color: $light;
     height: 5vh;
     text-align: center;
-    background-color: $text;
     padding: 0.2em 0;
-    
     a {
         font-size: 1.4em;
         padding: 0 10%;
-        color: $background;
+        color: inherit;
         text-decoration: none;
         &:hover {
-            color: $background;
+            color: $accent;
         }
     }
 }
@@ -37,63 +69,66 @@ html, body {
 }
 
 h1 {
-	color: $header;
+	background-color: $accent;
+	color: $bg;
+	text-shadow: 1px 1px black;
+	padding: 0.5em 0;
     font-weight: normal;
     font-size: 6em;
     line-height: 0.75em;
     text-align: center;
 }
 h2 {
-	color: $accent2;
+	color: $dark;
     padding: 1em;
     text-align: center;
 }
 section {
 	padding: 0 15%;
-    background-color: $background;
+    background-color: $bg;
     min-height: 100vh;
     overflow: hidden;
-	
-	h2 {
-		color: $text;
-	}
 }
 
 .bigbuttons {
+	color: $accent;
+	background-color: $bg;
+	text-shadow: 1px 1px black;
     float: left;
     width: 50%;
     text-align: center;
     height: 20vh;
     padding-top: 2vh;
     a {
-        color: $accent2;
+        color: inherit;
         font-size: 3.5em;
 		text-decoration: underline;
 		&:hover {
-			color: $accent1;
+			color: $light;
 		}
     }
 }
 #top {
+ 	background-color: $bg;
 	padding: inherit;
-    background-color: $background;
     min-height: 95vh;
     height: 95vh;
 }
 #portfolio {
-    background-color: $header;
+    background-color: $bg;
+	color: $dark;
 }
 .portfolio-state2 {
     padding-top: 7vh;
 }
 #resume {
-    background-color: $background;
+    background-color: $bg;
 }
 
 footer {
-	background-color: $text;
+	background-color: $dark;
+	color: $bg;
     text-align: center;
-    color: $background;
     background-color: black;
     padding: 0.2em 0;
 }
