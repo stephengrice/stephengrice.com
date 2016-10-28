@@ -1,115 +1,49 @@
-$light_blue: #2B3154;
-$blue: #19368E;
-$offwhite: #F3F7F0;
-$light_gray: #424B54;
-$gray: #232528;
+$olive: #393E41;
+$gray: #D3D0CB;
+$yellow: #E2C044;
+$white: #FFFFFF;
+$black: #050400;
 
-/* Overall */
-body {
-    background-color: $offwhite;
-    font-family: 'Open Sans', sans-serif;
+html, body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
+    height: 100%;
+    width: 100%;
 }
+
+.links {
+    background-color: black;
+    padding: 1%;
+}
+
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 0;
-}
-h2 {
-    font-size: 2em;
+    font-weight: normal;
+    font-size: 6em;
+    text-align: center;
+    padding: 5% 0;
 }
 section {
-    padding: 0.3em;
-    margin: auto;
+    background-color: gray;
+    height: 90vh;
 }
 
 
-
-/* Navbar Styling */
-nav {
-    background-color: black;
-    color: #f4efcd;
-    padding: 0.3em;
-    overflow: auto;
-    
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding-left: 0;
-    }
-    
-    li {
-        display: inline;
-        
-        a {
-            color: inherit;
-            text-decoration: none;
-            &:hover {
-                color: aqua;
-            }
-        }
-    }
-}
-
-#nav_linkedin {
-    right: 0;
+.bigbuttons {
     float: left;
-}
-#nav_github {
-    float: right;
-}
-
-
-/* Header styling */
-header {
-    background-color: $blue;
-    color: $offwhite;
+    width: 50%;
     text-align: center;
-    padding: 0.3em;
-    padding-bottom: 2em;
+    height: 50vh;
     
-    h2 {
-        background-color: $light_blue;
-        font-size: 1em;
-        padding-bottom: 10px;
-        width: 75%;
-        margin: auto;
-    }
-}
-
-.header_buttons {
-    margin: 1em;
     a {
-        background-color: $offwhite;
-        color: black;
+        background-color: aqua;
+        padding: 10%;
         text-decoration: none;
-        padding: 0.5em 4em;
-        border-radius: 5px;
-        border: 0px solid black;
+        color: inherit;
+        font-size: 400%;
     }
 }
 
-
-/* Portfolio Section */
-section#portfolio {
-    background-color: $offwhite;
-}
-
-/* Resume Section */
-section#resume {
-    h2 {
-        font-family: 'lobster', cursive;
-        font-size: 5em;
-        text-align: center;
-    }
-    background-color: $blue;
-    color: $offwhite;
-}
-
-
-/* Footer Styling */
 footer {
-    background-color: black;
-    color: #f4efcd;
-    padding: 0.3em;
+    width: 100%;
     text-align: center;
 }
