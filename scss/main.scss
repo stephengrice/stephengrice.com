@@ -1,10 +1,11 @@
-$olive: #393E41;
-$gray: #D3D0CB;
-$yellow: #E2C044;
-$white: #FFFFFF;
-$black: #050400;
+$header:#EB5E28;
+$text:#252422;
+$background:#FFFCF2;
+$accent1:#CCC5B9;
+$accent2:#FF9368;
 
 html, body {
+	color: $text;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     height: 100%;
@@ -12,19 +13,18 @@ html, body {
 }
 
 .links {
-    
     height: 5vh;
     text-align: center;
-    background-color: black;
+    background-color: $text;
     padding: 0.2em 0;
     
     a {
         font-size: 1.4em;
         padding: 0 10%;
-        color: $white;
+        color: $background;
         text-decoration: none;
         &:hover {
-            color: $yellow;
+            color: $background;
         }
     }
 }
@@ -37,19 +37,26 @@ html, body {
 }
 
 h1 {
+	color: $header;
     font-weight: normal;
     font-size: 6em;
     line-height: 0.75em;
     text-align: center;
 }
 h2 {
+	color: $accent2;
     padding: 1em;
     text-align: center;
 }
 section {
-    background-color: gray;
+	padding: 0 10%;
+    background-color: $background;
     min-height: 100vh;
     overflow: hidden;
+	
+	h2 {
+		color: $text;
+	}
 }
 
 .bigbuttons {
@@ -58,30 +65,35 @@ section {
     text-align: center;
     height: 20vh;
     padding-top: 2vh;
-    
     a {
-        color: $black;
+        color: $accent2;
         font-size: 3.5em;
+		
+		&:hover {
+			color: $accent1;
+		}
     }
 }
 #top {
-    background-color: $yellow;
+	padding: inherit;
+    background-color: $background;
     min-height: 95vh;
     height: 95vh;
 }
 #portfolio {
-    background-color: $olive;
+    background-color: $header;
 }
 .portfolio-state2 {
     padding-top: 7vh;
 }
 #resume {
-    background-color: $white;
+    background-color: $background;
 }
 
 footer {
+	background-color: $text;
     text-align: center;
-    color: $white;
+    color: $background;
     background-color: black;
     padding: 0.2em 0;
 }
