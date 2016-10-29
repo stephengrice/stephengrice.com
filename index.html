@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Stephen Grice</title>
-<link href="https://fonts.googleapis.com/css?family=Bangers|Roboto" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Roboto" rel="stylesheet">
+   	<link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>        
@@ -26,74 +28,77 @@
     </nav>
     <section id="portfolio">
         <h2>Portfolio</h2>
-        <article>
-            <h3>datastructures-java</h3>
-            <p>Blah blah blah</p>
-            <p>Java</p>
-            <p>Source</p>
-        </article>
-        <article>
-            <h3>stephengrice.github.io (this site!)</h3>
-            <p>Blah blah blah</p>
-            <p>HTML, CSS, Javascript</p>
-            <p>Source</p>
-        </article>
-        <article>
-            <h3>racket-snake</h3>
-            <p>Blah blah blah blah</p>
-            <p>Racket</p>
-            <p>Source</p>
-        </article>
+        
+        <div class="carousel" data-flickity='{ "wrapAround": true, "cellAlign": "left", "contain": true  }'>
+			<div>
+				<h3>datastructures-java</h3>
+				<p>Blah blah blah</p>
+				<p>Java</p>
+				<p>Source</p>
+			</div>
+			<div>
+				<h3>stephengrice.github.io (this site!)</h3>
+				<p>Blah blah blah</p>
+				<p>HTML, CSS, Javascript</p>
+				<p>Source</p>
+			</div>
+			<div>
+				<h3>racket-snake</h3>
+				<p>Blah blah blah blah</p>
+				<p>Racket</p>
+				<p>Source</p>
+			</div>
+        </div>
+        
+
     </section>
     
     <section id="resume">
         <h2>Resume</h2>
-        <article>
-            <h3>Education</h3>
-            
-            <h4>Stockton University</h4>
-            <p>Anticipated Graduation: May 2017</p>
-            <p>B.S. Computer Science and Information Systems</p>
-            <p>Minor: Mathematics</p>
-            <p>Current GPA: 4.000</p>
-            
-            <h4>Burlington County College</h4>
-            <p>Graduated May 2015</p>
-            <p>Associate of Science Mathematics</p>
-            <p>Associate of Science Computer Science</p>
-        </article>
-        <article>
-            <h3>Experience</h3>
-            
-            <h4>Allied Recycling, Inc.</h4>
-            <p>Web Developer, Sales Representative</p>
-            
-            <h4>United States Air Force</h4>
-            <p>Intern</p>
-            
-            <h4>County of Burlington</h4>
-            <p>Information Technology Intern</p>
-        </article>
-        <article>
-            <h3>Skills</h3>
-            <ul>
-                <li>Java development <a>(Show me)</a></li>
-                <li>Python development</li>
-                <li>Functional programming <a>(Show me)</a></li>
-                <li>Linux configuration and development</li>
-                <li>Windows configuration and development</li>
-                <li>Spanish language - Intermediate (View site in Spanish)</li>
-                <li>Russian language - Intermediate (View site in Russian)</li>
-                <li>Arabic language - Beginner</li>
-            </ul>
-        </article>
+        
+        <div class="carousel" data-flickity='{ "wrapAround": true, "cellAlign": "left", "contain": true  }'>
+			<div>
+				<h3>Education</h3>
+
+				<h4>Stockton University</h4>
+				<p>Anticipated Graduation: May 2017</p>
+				<p>B.S. Computer Science and Information Systems</p>
+				<p>Minor: Mathematics</p>
+				<p>Current GPA: 4.000</p>
+
+				<h4>Burlington County College</h4>
+				<p>Graduated May 2015</p>
+				<p>Associate of Science Mathematics</p>
+				<p>Associate of Science Computer Science</p>
+			</div>
+			<div>
+				<h3>Experience</h3>
+
+				<h4>Allied Recycling, Inc.</h4>
+				<p>Web Developer, Sales Representative</p>
+
+				<h4>United States Air Force</h4>
+				<p>Intern</p>
+
+				<h4>County of Burlington</h4>
+				<p>Information Technology Intern</p>
+			</div>
+			<div>
+				<h3>Skills</h3>
+				<p>Java development <a>(Show me)</a></p>
+				<p>Python development</p>
+				<p>Functional programming <a>(Show me)</a></p>
+				<p>Linux configuration and development</p>
+				<p>Windows configuration and development</p>
+				<p>Spanish language - Intermediate (View site in Spanish)</p>
+				<p>Russian language - Intermediate (View site in Russian)</p>
+				<p>Arabic language - Beginner</p>
+			</div>
+        </div>
     </section>
     
-    <footer>
-        &copy; 2016 Stephen Grice
-    </footer>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
