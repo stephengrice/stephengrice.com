@@ -1,14 +1,82 @@
+/* Palette */
 $dark: #050505;
 $accent: #2F6BBF;
 $bg: #FFFFFF;
 $light: #DDDBCB;
 
+/* Overall styles */
 html, body {
 	color: $dark;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     height: 100%;
     width: 100%;
+}
+
+.links {
+    background-color: $dark;
+	color: $light;
+    height: 5vh;
+    text-align: center;
+    padding: 0.2em 0;
+    a {
+        font-size: 1.4em;
+        padding: 0 10%;
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+            color: $accent;
+        }
+    }
+}
+.links-state2 {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    opacity: 0.75;
+}
+
+section {
+    background-color: $bg;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+h2 {
+	background-color: $accent;
+	color: $bg;
+	text-shadow: 1px 1px $dark;
+	padding: 0.5em;
+	text-align: center;
+	
+}
+
+
+/* TOP SECTION */
+
+#top {
+ 	background-color: $bg;
+	padding: inherit;
+    min-height: 95vh;
+    height: 95vh;
+	
+	h2 {
+		background-color: $bg;
+		color: $dark;
+    	padding: 1em;
+    	text-align: center;
+	}
+}
+
+h1 {
+	background-color: $accent;
+	color: $bg;
+	text-shadow: 1px 1px black;
+	padding: 0.5em 0;
+    font-weight: normal;
+    font-size: 6em;
+    line-height: 0.75em;
+    text-align: center;
 }
 
 .bigbuttons {
@@ -29,70 +97,26 @@ html, body {
     }
 }
 
-.links {
-    background-color: $dark;
-	color: $light;
-    height: 5vh;
-    text-align: center;
-    padding: 0.2em 0;
-    a {
-        font-size: 1.4em;
-        padding: 0 10%;
-        color: inherit;
-        text-decoration: none;
-        &:hover {
-            color: $accent;
-        }
-    }
-}
 
-.links-state2 {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    opacity: 0.75;
-}
-
-h1 {
-	background-color: $accent;
-	color: $bg;
-	text-shadow: 1px 1px black;
-	padding: 0.5em 0;
-    font-weight: normal;
-    font-size: 6em;
-    line-height: 0.75em;
-    text-align: center;
-}
-h2 {
-	color: $dark;
-    padding: 1em;
-    text-align: center;
-}
-section {
-	padding: 0 15%;
-    background-color: $bg;
-    min-height: 100vh;
-    overflow: hidden;
-}
-
-#top {
- 	background-color: $bg;
-	padding: inherit;
-    min-height: 95vh;
-    height: 95vh;
-}
+/* Portfolio section */
 #portfolio {
+	padding-top: 2vh;
     background-color: $bg;
 	color: $dark;
 }
 .portfolio-state2 {
     padding-top: 7vh;
 }
+
+/* Resume Section */
 #resume {
     background-color: $bg;
 }
 
+/* Footer section */
+
 footer {
+	margin-top: 2em;
 	background-color: $dark;
 	color: $bg;
     text-align: center;
