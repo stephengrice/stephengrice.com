@@ -25,4 +25,23 @@ $(document).ready(function() {
 		}, TRANSITION_SPEED);
 		return false;
 	});
+	
+	responsiveStyle();
+	// Responsive check
+	wdw.resize(function() {
+		responsiveStyle();
+	});
 });
+
+function responsiveStyle() {
+	console.log("isMobile(): " + isMobile() + " viewport: " + $(window).width());
+	if (isMobile()) {
+		$("#nav_top").insertBefore("#nav_portfolio");
+	} else {
+		$("#nav_portfolio").insertBefore("#nav_top");
+	}
+}
+
+function isMobile() {
+	return $("#mobile").css("visibility") == "visible";
+}

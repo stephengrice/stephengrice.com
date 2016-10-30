@@ -9,6 +9,10 @@ $gh-html: #e44b23;
 $gh-java: #b07219;
 
 /* Overall styles */
+#mobile {
+	visibility: hidden;
+}
+
 html, body {
 	color: $dark;
     font-family: 'Roboto', sans-serif;

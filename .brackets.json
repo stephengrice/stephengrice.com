@@ -10,6 +10,16 @@
                 "outputStyle": "compressed"
             },
             "linting.collapsed": false
+        },
+		"scss/mobile.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "includePaths": [],
+                "sourceComments": false,
+                "outputStyle": "compressed"
+            },
+            "linting.collapsed": false
         }
     }
 }
