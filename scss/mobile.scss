@@ -29,15 +29,18 @@
 	}
 	
 	nav {
-		height: 15vh;
+		height: 12vh;;
 		a {
 			display: block;
-			height: 5vh;
+			height: 4vh;
 		}
 	}
 	
-	.carousel img {
-		height: 10em;
+	.carousel {
+		height: 65vh;
+		img {
+			height: 10em;
+		}
 	}
 }
 
