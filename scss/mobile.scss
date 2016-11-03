@@ -16,7 +16,7 @@
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 540px) {
 	#mobile {
-		/* JS relies on this property to determine if mobile is displayed! */
+		/* JS relies on this property to determine if mobile styling is displayed! */
 		visibility: visible;
 	}
 	h1 {
