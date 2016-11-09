@@ -7,4 +7,4 @@ My portfolio site, along with a resume, can be found [here](http://www.stephengr
 
 Dependencies / Credits
 ----------------------
-* The Portfolio and Resume sections utilize [Flickity](http://flickity.metafizzy.co/), a JavaScript carousel
+* The Portfolio and Resume sections utilize [Flickity](http://flickity.metafizzy.co/), a JavaScript carousel.
