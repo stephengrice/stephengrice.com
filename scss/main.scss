@@ -1,6 +1,20 @@
+$FOOTER_HEIGHT: 8vh;
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
 body {
     font-family: 'Source Sans Pro', sans-serif;   margin: 0;
-    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        color: gray;
+        border-color: gray;
+    }
 }
 
 nav, main, footer {
@@ -22,21 +36,26 @@ nav {
             font-size: 1.5rem;
 
             a {
-                text-decoration: none;
-                color: inherit;
                 border-bottom: 0.25rem solid black;
-                &:hover {
-                    color: gray;
-                    border-bottom-color: gray;
-                }
             }
         }
+    }
+}
+
+li.active {
+    color: gray;
+    a {
+        border-color: gray;
     }
 }
 
 // Main sectio
 main {
     height: 60vh;
+}
+.avatar {
+    max-width: 15rem;
+    border-radius: 50%;
 }
 h1 {
     font-size: 2.5rem;
@@ -45,12 +64,13 @@ p.lead {
     font-size: 1.2rem;
 }
 
-// Footer
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 10vh;
+// Sticky Footer
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -$FOOTER_HEIGHT;
+}
+.push, footer {
+    height: $FOOTER_HEIGHT;
 }
 
 nav, main, footer {
