@@ -1,6 +1,9 @@
 window.onload = function() {
     document.getElementById("footer_year").innerHTML = new Date().getFullYear() + " ";
-    setGreeting();
+    console.log(location.pathname);
+    if (location.pathname == "/" || location.pathname == "/index.html") {
+        setGreeting();
+    }
 };
 
 function setGreeting() {

@@ -1,4 +1,4 @@
-$FOOTER_HEIGHT: 8vh;
+$FOOTER_HEIGHT: 12vh;
 
 html, body {
     margin: 0;
@@ -19,6 +19,8 @@ a {
 
 nav, main, footer {
     text-align: center;
+    margin: 0;
+    border-width: 0;
 }
 
 // Navbar
@@ -49,9 +51,10 @@ li.active {
     }
 }
 
-// Main sectio
+// Main section
 main {
-    height: 60vh;
+    min-height: 60vh;
+    margin-bottom: -$FOOTER_HEIGHT;
 }
 .avatar {
     max-width: 15rem;
@@ -63,17 +66,27 @@ h1 {
 p.lead {
     font-size: 1.2rem;
 }
+.resume {
+    text-align: left;
+    padding: 0 25%;
+    section {
+        padding: 0 10%;
+        p {
+            margin: 0;
+        }
+    }
+}
+
+td.emphasis {
+    font-style: italic;
+    padding-right: 2rem;
+    min-width: 7rem;
+}
 
 // Sticky Footer
-.wrapper {
-    min-height: 100%;
-    margin-bottom: -$FOOTER_HEIGHT;
-}
 .push, footer {
     height: $FOOTER_HEIGHT;
 }
-
-nav, main, footer {
-    margin: 0;
-    border-width: 0;
+footer {
+    line-height: $FOOTER_HEIGHT;
 }
