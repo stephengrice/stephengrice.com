@@ -8,12 +8,11 @@ body {
     font-family: 'Source Sans Pro', sans-serif;   margin: 0;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: inherit;
     &:hover {
-        color: gray;
-        border-color: gray;
+        opacity: 0.2;
     }
 }
 
@@ -43,11 +42,10 @@ nav {
         }
     }
 }
-
 li.active {
-    color: gray;
-    a {
-        border-color: gray;
+    opacity: 0.2;
+    a:hover {
+        opacity: 1;
     }
 }
 
@@ -56,9 +54,27 @@ main {
     min-height: 60vh;
     margin-bottom: -$FOOTER_HEIGHT;
 }
+.main_images a {
+    padding: 5rem;
+}
 .avatar {
     max-width: 15rem;
     border-radius: 50%;
+}
+.social {
+    a {
+        opacity: 1;
+    }
+    img {
+        max-width: 7rem;
+        border-radius: 50%;
+        opacity: 0.2;
+        animation: fadeout 0.3s 1;
+        &:hover {
+            opacity: 1;
+            animation: fadein 0.3s 1;
+        }
+    }
 }
 h1 {
     font-size: 2.5rem;
@@ -91,4 +107,22 @@ td.emphasis {
 }
 footer {
     line-height: $FOOTER_HEIGHT;
+}
+
+// Animation keyframes
+@keyframes fadein {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
 }
