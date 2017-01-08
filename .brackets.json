@@ -9,9 +9,9 @@
                 "sourceComments": false,
                 "outputStyle": "compressed"
             },
-            "linting.collapsed": false
+            "linting.collapsed": true
         },
-		"scss/mobile.scss": {
+        "scss/mobile.scss": {
             "sass.enabled": true,
             "sass.options": {
                 "outputDir": "../css/",

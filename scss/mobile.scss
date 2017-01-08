@@ -15,33 +15,7 @@
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 540px) {
-	#mobile {
-		/* JS relies on this property to determine if mobile styling is displayed! */
-		visibility: visible;
-	}
-	h1 {
-		font-size: 3em;
-	}
-	.bigbuttons a {
-		font-size: 2em;
-		display: block;
-		padding-bottom: 2em;
-	}
-	
-	nav {
-		height: 12vh;;
-		a {
-			display: block;
-			height: 4vh;
-		}
-	}
-	
-	.carousel {
-		height: 65vh;
-		img {
-			height: 10em;
-		}
-	}
+    
 }
 
 /* Custom, iPhone Retina */ 
