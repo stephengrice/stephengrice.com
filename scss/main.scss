@@ -71,10 +71,12 @@ p.lead {
     padding: 0 25%;
     section {
         padding: 0 10%;
-        p {
-            margin: 0;
-        }
     }
+}
+thead td {
+    font-weight: bold;
+    min-width: 7rem;
+    padding-right: 2rem;
 }
 
 td.emphasis {
