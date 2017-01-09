@@ -44,11 +44,11 @@ nav {
     ul {
         padding: 0;
         li {
-            display: inline;
+            display: inline-block;
             padding: 0 5vw;
-            font-size: 1.5rem;
-
+			min-width: 6vw;
             a {
+				font-size: 1.5rem;
                 border-bottom: 0.25rem solid black;
             }
         }
