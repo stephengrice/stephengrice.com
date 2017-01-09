@@ -69,9 +69,10 @@ main {
 .main_images a {
     padding: 5rem;
 }
-.avatar {
+#avatar {
     max-width: 15rem;
     border-radius: 50%;
+	display: inline;
 }
 .social {
     a {

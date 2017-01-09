@@ -22,3 +22,14 @@
 @media only screen and (max-width : 320px) {
 
 }
+
+// Fix break point for main page images
+@media only screen and (max-width : 794px) {
+	.social img {
+		max-width: 4rem;
+	}
+	#avatar {
+		display: block;
+		margin: auto;
+	}
+}
