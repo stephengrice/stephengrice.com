@@ -14,7 +14,7 @@ function setGreeting() {
     var hour = new Date().getHours();
     var greeting;
     if (hour < 12) {
-        greeting = "Good evening.";
+        greeting = "Good morning.";
     } else if (hour < 18) {
         greeting = "Good afternoon.";
     } else {
