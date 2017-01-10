@@ -23,6 +23,7 @@ body {
 nav a {
     text-decoration: none;
     color: inherit;
+	transition: all 0.3s ease 0s;
     &:hover {
         opacity: 0.2;
     }
@@ -82,10 +83,9 @@ main {
         max-width: 7rem;
         border-radius: 50%;
         opacity: 0.2;
-        animation: fadeout 0.3s 1;
+		transition: all 0.3s ease 0s;
         &:hover {
             opacity: 1;
-            animation: fadein 0.3s 1;
         }
     }
 }
@@ -120,24 +120,6 @@ td.emphasis {
 }
 footer {
     line-height: $FOOTER_HEIGHT;
-}
-
-// Animation keyframes
-@keyframes fadein {
-    0% {
-        opacity: 0.2;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes fadeout {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.2;
-    }
 }
 
 // Icons indicating programming language
