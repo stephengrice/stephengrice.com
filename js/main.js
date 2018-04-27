@@ -2,22 +2,20 @@ window.onload = main;
 
 var slides;
 var currentSlide;
+var slideIndex = 0;
 
 function main() {
   slides = document.querySelectorAll('.slide');
   currentSlide = document.querySelector("#current-slide");
-  console.log(currentSlide);
-  currentSlide.onclick = onclick_test;
-  // for (var i = 0; i < slides.length; i++) {
-  //   slides[i].style.width = window.innerWidth + "px";
-  //   slides[i].style.height = window.innerHeight + "px";
-  // }
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].onclick = onclick_test;
+  }
 }
 
 function onclick_test(e) {
-  console.log("clicked");
-  slides[1].setAttribute('id', 'current-slide');
-  slides[1].setAttribute('class', 'slide');
+  slides[slideIndex].setAttribute('id', '');
+  slideIndex = (slideIndex + 1) % slides.length;
 
-  slides[0].setAttribute('id', '');
+  slides[slideIndex].setAttribute('id', 'current-slide');
+  slides[slideIndex].setAttribute('class', 'slide');
 }
